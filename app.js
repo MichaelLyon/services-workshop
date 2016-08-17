@@ -1,12 +1,12 @@
-var app = angular.module('servicesWorkshop', ['ngRoute']);
+var app = angular.module('servicesWorkshop', ['ngRoute', 'servicesWorkshop.postMessageController', 'servicesWorkshop.messagesController']);
 
 app.config(function($routeProvider) {
     $routeProvider
-    .when("/messages", {
+    .when("/", {
         templateUrl : "/templates/messages.html",
         controller: 'MessagesController'
     })
-    .when("/postmessages", {
+    .when("/new", {
         templateUrl : "/templates/new_message.html",
         controller:'PostMessageController'
     })
