@@ -9,7 +9,8 @@ app.factory('MessagesService', function () {
       }
     ],
     add: function (message) {
-      message.id = this.all.length+1
+      console.log(message);
+      message.id = this.all.length+1;
       this.all.push(message);
     }
   }

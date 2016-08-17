@@ -1,6 +1,5 @@
-var app = angular.module('servicesWorkshop.messagesController', [])
-
-app.controller('MessagesController', function ($scope) {
+app.controller('MessagesController', function ($scope, MessagesService) {
   $scope.vw = {};
+  $scope.vw.messages = MessagesService.all;
   $scope.vw.success = "Success!!"
 })
