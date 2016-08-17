@@ -1,4 +1,5 @@
-var app = angular.module('servicesWorkshop', ['ngRoute', 'servicesWorkshop.postMessageController', 'servicesWorkshop.messagesController']);
+var app = angular.module('servicesWorkshop', ['ngRoute', 'servicesWorkshop.postMessageController',
+ 'servicesWorkshop.messagesController','servicesWorkshop.factories']);
 
 app.config(function($routeProvider) {
     $routeProvider
